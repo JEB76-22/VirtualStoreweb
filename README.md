@@ -9,5 +9,5 @@ Web Virtual Store con Html, Css y JavaScrit.
 ![](image/virtualstore8.png)
 
 <h1>Jeb&Dev</h1>
-contact j.e.b.inter@gmail.com
+contact j.e.b.inter@gmail.com hr
 tel 2616667047
