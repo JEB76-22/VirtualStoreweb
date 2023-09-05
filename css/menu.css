@@ -1,0 +1,105 @@
+
+:root{
+ --primario:#9c27b0;
+ --primarioOscuro:#891190; 
+ --secundario:#ffce00;
+ --secundarioOscuro: #d8ad02; 
+ --blanco: #fff; 
+ --negro:#000;
+ --fuentePrincipal:"Staatliches", cursive;
+}
+
+
+
+.navbar{
+    color:var(--blanco);
+    font-family: 'Staatliches', cursive;
+    background-color: var(--primarioOscuro);
+    height: 60px;                   /*Altura  del contenedor*/
+    position: relative;
+    font-size: 4rem;
+    padding: 10px 12px;
+   
+}
+.checkbox, .iconos{
+    color: white;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top:15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.iconos{
+    pointer-events: none;
+    font-size: 28px;
+}
+.checkbox{
+    opacity: 0;
+}
+
+.fi-br-cross{
+    display: none;
+}
+
+.checkbox:checked ~ .fi-br-menu-burger{
+    display: none;
+}
+.checkbox:checked ~ .fi-br-cross{
+    display: block;
+    margin-bottom: 10px;
+
+}
+.checkbox:checked ~ .menu{
+    display: block;
+    top:48px;
+}
+.menu{
+    background-color: var(--primarioOscuro);
+    width: 100%;               /* Ancho  del contenedor   100% */
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    display: none;  
+}
+.menu li{
+    list-style: none;
+    }
+.menu li a{    /*Elemneto de linea*/
+    text-decoration: none;
+    color:var(--blanco);
+    display: block;
+        }
+.menu li a:hover{
+    color:var(--secundario)
+            }
+.menu__activo{
+    z-index: 1;
+}
+.menu__color{
+    color: var(--secundario) !important;
+}
+.menu__color:hover{
+    color: var(--blanco)!important;
+}
+/* ///////////////////////////////////////////////////////////////////////////////// */
+@media (min-width: 768px) {
+    .checkbox, .iconos{
+        display: none;
+    }
+    .menu{
+        top:0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        }
+    .contenedor{
+        margin-top: 0px;
+    }
+}
+.registro{
+    margin-top: 70px;
+}
